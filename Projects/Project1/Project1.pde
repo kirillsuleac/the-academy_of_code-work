@@ -60,9 +60,9 @@ void draw() {
     }
 }
 text("distance between circle is: " + distBetweenCenters, 50, 25);
-  text("radius player circle is: " + 60, 50, 50);
-  text("radius enemy circle is: " + 250, 50, 75);
-  distBetweenCenters = dist(playerVertPoz, playerVertPoz, 400, 400);
+  text("radius player circle is: " + playerRadius, 50, 50);
+  text("radius enemy circle is: " + enemyRadius, 50, 75);
+  distBetweenCenters = dist(playerHoriPoz, playerVertPoz, ballHozPosition, ballVertPosition);
   if (sumOfRadii > distBetweenCenters) {
     background(255, 0, 0);
     fill(0, 255, 50);
